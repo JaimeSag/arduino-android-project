@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.arduinoproject.homeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/capFragment"
+        android:name="com.example.arduinoproject.CapFragment"
+        android:label="fragment_cap"
+        tools:layout="@layout/fragment_cap" />
+    <fragment
+        android:id="@+id/potFragment"
+        android:name="com.example.arduinoproject.PotFragment"
+        android:label="fragment_pot"
+        tools:layout="@layout/fragment_pot" />
+    <fragment
+        android:id="@+id/tempFragment"
+        android:name="com.example.arduinoproject.TempFragment"
+        android:label="fragment_temp"
+        tools:layout="@layout/fragment_temp" />
+    <fragment
+        android:id="@+id/revFragment"
+        android:name="com.example.arduinoproject.RevFragment"
+        android:label="fragment_rev"
+        tools:layout="@layout/fragment_rev" />
+</navigation>

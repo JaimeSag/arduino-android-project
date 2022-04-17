@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Arduino Project</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="temperatura">Temperatura</string>
+    <string name="general">General</string>
+    <string name="potenci_metro">Potenciómetro</string>
+    <string name="capacitor">Capacitor</string>
+    <string name="rpm">RPM</string>
+    <string name="vista_general">Vista general</string>
+    <string name="arduino_project">Arduino Project</string>
+</resources>

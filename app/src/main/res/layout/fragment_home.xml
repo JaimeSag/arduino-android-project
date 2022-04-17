@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".homeFragment"
+    android:padding="30dp">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        style="@style/TitleTextItem"
+        android:text="@string/vista_general"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/home_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/arduino_project"
+        android:fontFamily="@font/ptsans_bold"
+        android:textSize="40sp"
+        android:layout_marginBottom="15dp"/>
+
+    <!-- Layour for temp -->
+    <LinearLayout
+        style="@style/Widget" >
+
+        <ImageView
+            style="@style/ImageWidget"
+            android:background="@drawable/purple_shape"
+            android:src="@drawable/ic_temperatura_100"
+            app:tint="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TitleTextItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temperatura" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unidad de medida" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/MeasuredValue"
+            android:text="100.2" />
+    </LinearLayout>
+
+    <!-- Layout for potentiometer -->
+    <LinearLayout
+        style="@style/Widget" >
+
+        <ImageView
+            style="@style/ImageWidget"
+            android:background="@drawable/lilac_shape"
+            android:src="@drawable/ic_potenciometro_100"
+            app:tint="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TitleTextItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/potenci_metro" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unidad de medida" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/MeasuredValue"
+            android:text="100.2" />
+    </LinearLayout>
+
+    <!-- Layout for capacitor -->
+    <LinearLayout
+        style="@style/Widget" >
+
+        <ImageView
+            style="@style/ImageWidget"
+            android:background="@drawable/orange_shape"
+            android:src="@drawable/ic_condensador_90"
+            app:tint="@color/white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TitleTextItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/capacitor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hola" />
+        </LinearLayout>
+        <TextView
+            style="@style/MeasuredValue"
+            android:text="222.7" />
+    </LinearLayout>
+
+    <!-- Layout for RMP -->
+    <LinearLayout
+        style="@style/Widget" >
+
+        <ImageView
+            style="@style/ImageWidget"
+            android:background="@drawable/yellow_shape"
+            android:src="@drawable/ic_propeller_64"
+            app:tint="@color/black_mate"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TitleTextItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rpm" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unidad de medida" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/MeasuredValue"
+            android:text="100.2" />
+    </LinearLayout>
+
+</LinearLayout>

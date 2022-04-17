@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="TitleTextItem">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.2</item>
+        <item name="fontFamily">@font/mukta_bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MeasuredValue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:autoSizeTextType" tools:targetApi="o">uniform</item>
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:layout_weight">1</item>
+        <item name="fontFamily">@font/mukta_bold</item>
+    </style>
+
+    <style name="Widget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/item_meassured</item>
+        <item name="android:layout_marginBottom">15dp</item>
+    </style>
+
+    <style name="ImageWidget">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:maxWidth">42dp</item>
+        <item name="android:maxHeight">42dp</item>
+    </style>
+</resources>
