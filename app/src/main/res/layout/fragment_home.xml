@@ -37,7 +37,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
             android:orientation="vertical">
 
             <TextView
@@ -70,7 +70,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
             android:orientation="vertical">
 
             <TextView
@@ -103,7 +103,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
             android:orientation="vertical">
 
             <TextView
@@ -115,7 +115,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="hola" />
+                android:text="Unidad de medida" />
         </LinearLayout>
         <TextView
             style="@style/MeasuredValue"
@@ -135,7 +135,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
             android:orientation="vertical">
 
             <TextView
@@ -154,5 +154,4 @@
             style="@style/MeasuredValue"
             android:text="100.2" />
     </LinearLayout>
-
 </LinearLayout>

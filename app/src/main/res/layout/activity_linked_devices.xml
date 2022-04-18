@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LinkedDevices"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <TextView
+        style="@style/TitleTextItem"
+        android:text="Dispositivos vinculados"
+        android:textSize="12sp" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/bt_animation"
+        android:layout_width="match_parent"
+        android:layout_height="218dp"
+        app:lottie_rawRes="@raw/bluetooth_animation" />
+
+    <TextView
+        android:fontFamily="@font/ptsans_regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleccione el módulo bluetooth del Arduino"
+        android:layout_marginBottom="15dp"/>
+
+    <ListView
+        android:id="@+id/list_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@drawable/blue_shape"/>
+
+</LinearLayout>
