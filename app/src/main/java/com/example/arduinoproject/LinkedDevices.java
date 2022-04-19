@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import com.airbnb.lottie.LottieAnimationView;
@@ -22,7 +23,9 @@ public class LinkedDevices extends AppCompatActivity {
     private BluetoothAdapter bluetoothAdapter;
     private ArrayAdapter mParDevices;
     ListView listaDispositivos;
+    Button jitemSelected;
     LottieAnimationView btAnimation;
+    String name, mac;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +35,9 @@ public class LinkedDevices extends AppCompatActivity {
         bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
         listaDispositivos = findViewById(R.id.list_devices);
         btAnimation = findViewById(R.id.bt_animation);
+        jitemSelected = findViewById(R.id.bt_item_selected);
+
+        jitemSelected.setEnabled(false);
 
         if (bluetoothAdapter == null) Log.e("ERROR", "No hay dispositivos bluetooth");
 
@@ -39,9 +45,16 @@ public class LinkedDevices extends AppCompatActivity {
             @SuppressLint("MissingPermission")
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                String name = ((TextView) view).getText().toString();
-                String mac = name.substring(name.length() - 17);
+                view.setSelected(true);
+                name = ((TextView) view).getText().toString();
+                mac = name.substring(name.length() - 17);
+                jitemSelected.setEnabled(true);
+            }
+        });
 
+        jitemSelected.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 finishAffinity();
                 Intent inconn = new Intent(LinkedDevices.this, MainActivity.class);
                 inconn.putExtra(EXTRA_DEVICE_ADDRESS, mac);

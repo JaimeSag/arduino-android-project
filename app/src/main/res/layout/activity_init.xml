@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".InitActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:src="@raw/init_image"
+            android:layout_marginBottom="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/arduino_project"
+            android:fontFamily="@font/ptsans_bold"
+            android:textSize="40sp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            style="@style/RegularText"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum at nisi id tempus. Quisque ac dapibus massa."
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/xcontinue"
+        android:background="@drawable/primary_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="Continuar"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <CheckBox
+        style="@style/RegularText"
+        android:id="@+id/xcheckbox_init"
+        android:text="No volver a mostrar esta pantalla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xcontinue"
+        android:buttonTint="@color/blue_primary"
+        android:checked="true" />
+</androidx.constraintlayout.widget.ConstraintLayout>

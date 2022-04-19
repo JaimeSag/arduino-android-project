@@ -13,11 +13,16 @@
         android:text="Dispositivos vinculados"
         android:textSize="12sp" />
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/bt_animation"
-        android:layout_width="match_parent"
-        android:layout_height="218dp"
-        app:lottie_rawRes="@raw/bluetooth_animation" />
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/bt_animation"
+            android:layout_width="match_parent"
+            android:layout_height="218dp"
+            app:lottie_rawRes="@raw/bluetooth_animation" />
+    </FrameLayout>
+
 
     <TextView
         android:fontFamily="@font/ptsans_regular"
@@ -30,6 +35,17 @@
         android:id="@+id/list_devices"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:listSelector="@drawable/blue_shape"/>
+        android:choiceMode="singleChoice"
+        android:listSelector="@color/blue_primary"
+        android:layout_marginBottom="30dp"/>
 
+    <Button
+        android:id="@+id/bt_item_selected"
+        android:background="@drawable/primary_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Continuar"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"/>
 </LinearLayout>

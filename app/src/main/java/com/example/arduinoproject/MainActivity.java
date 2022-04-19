@@ -12,6 +12,7 @@ import android.bluetooth.BluetoothSocket;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity{
     BottomNavigationView bottomNavigationView;
     private BluetoothAdapter bluetoothAdapter;
     private BluetoothDevice bluetoothDevice;
+    private BluetoothSocket mmSocket;
     public static String address;
     ConnectThread connectThread;
     private static final UUID btModuleUUID = UUID.fromString("00001105-0000-1000-8000-00805F9B34FB");
@@ -47,10 +49,22 @@ public class MainActivity extends AppCompatActivity{
         bluetoothDevice = bluetoothAdapter.getRemoteDevice(address);
         connectThread = new ConnectThread(bluetoothDevice);
         connectThread.start();
+        while(true){
+            if(!connectThread.isAlive()){
+                if(!mmSocket.isConnected()) {
+                    startActivity(new Intent(this, LinkedDevices.class));
+                    Toast.makeText(this, "No se pudo establecer la conexión", Toast.LENGTH_LONG).show();
+                    finish();
+                    break;
+                }
+                else Toast.makeText(this, "Dispositivo conectado", Toast.LENGTH_LONG).show();
+                break;
+            }
+        }
     }
 
     private class ConnectThread extends Thread {
-        private final BluetoothSocket mmSocket;
+        //private final BluetoothSocket mmSocket;
         private final BluetoothDevice mmDevice;
         String TAG = "ERROR";
 
