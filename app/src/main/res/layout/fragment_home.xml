@@ -47,13 +47,15 @@
                 android:text="@string/temperatura" />
 
             <TextView
+                android:id="@+id/xsec_text_temp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Unidad de medida" />
+                android:text="—" />
         </LinearLayout>
 
         <TextView
             style="@style/MeasuredValue"
+            android:id="@+id/xtemp_value"
             android:text="—" />
     </LinearLayout>
 
@@ -80,13 +82,15 @@
                 android:text="@string/potenci_metro" />
 
             <TextView
+                android:id="@+id/xsec_text_pot"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Unidad de medida" />
+                android:text="—" />
         </LinearLayout>
 
         <TextView
             style="@style/MeasuredValue"
+            android:id="@+id/xpot_value"
             android:text="—" />
     </LinearLayout>
 
@@ -113,12 +117,14 @@
                 android:text="@string/capacitor" />
 
             <TextView
+                android:id="@+id/xsec_text_cap"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Unidad de medida" />
+                android:text="—" />
         </LinearLayout>
         <TextView
             style="@style/MeasuredValue"
+            android:id="@+id/xcap_value"
             android:text="—" />
     </LinearLayout>
 
@@ -145,13 +151,15 @@
                 android:text="@string/rpm" />
 
             <TextView
+                android:id="@+id/xsec_text_rpm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Unidad de medida" />
+                android:text="—" />
         </LinearLayout>
 
         <TextView
             style="@style/MeasuredValue"
+            android:id="@+id/xrpm_value"
             android:text="—" />
     </LinearLayout>
 </LinearLayout>

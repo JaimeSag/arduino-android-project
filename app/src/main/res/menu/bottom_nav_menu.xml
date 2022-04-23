@@ -1,27 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/tempFragment"
+        android:enabled="false"
+        android:icon="@drawable/ic_temperatura_100"
+        android:title="@string/temperatura" />
+
+    <item
+        android:id="@+id/potFragment"
+        android:enabled="false"
+        android:icon="@drawable/ic_potenciometro_100"
+        android:title="@string/potenci_metro" />
+
     <item
         android:id="@+id/homeFragment"
         android:icon="@drawable/ic_monitoring_66"
         android:title="@string/general" />
 
     <item
-        android:id="@+id/tempFragment"
-        android:icon="@drawable/ic_temperatura_100"
-        android:title="@string/temperatura" />
-
-    <item
-        android:id="@+id/potFragment"
-        android:icon="@drawable/ic_potenciometro_100"
-        android:title="@string/potenci_metro" />
-
-    <item
         android:id="@+id/capFragment"
+        android:enabled="false"
         android:icon="@drawable/ic_condensador_90"
         android:title="@string/capacitor" />
 
     <item
         android:id="@+id/revFragment"
+        android:enabled="false"
         android:icon="@drawable/ic_propeller_64"
         android:title="@string/rpm" />
 </menu>
