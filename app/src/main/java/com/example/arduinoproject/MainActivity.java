@@ -54,11 +54,10 @@ public class MainActivity extends AppCompatActivity{
                 if(msg.what == 0) {
                     String readMessage = (String) msg.obj;
                     String[] arrSplit = readMessage.split(",");
-                    Log.e("MSG", readMessage);
                     jpotValue.setText(arrSplit[0]);
                     jsecPotText.setText(arrSplit[1]);
                     jcapValue.setText(arrSplit[2]);
-                    }
+                }
             }
         };
 

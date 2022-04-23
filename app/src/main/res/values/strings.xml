@@ -9,4 +9,5 @@
     <string name="rpm">RPM</string>
     <string name="vista_general">Vista general</string>
     <string name="arduino_project">Arduino Project</string>
+    <string name="description">Esta aplicación permite la medición remota de señales digitales y analógicas mediante la comunicación bluetooth y una placa de microcontrolador (Arduino).</string>
 </resources>

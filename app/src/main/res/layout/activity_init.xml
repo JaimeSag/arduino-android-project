@@ -33,7 +33,7 @@
 
         <TextView
             style="@style/RegularText"
-            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum at nisi id tempus. Quisque ac dapibus massa."
+            android:text="@string/description"
             android:textAlignment="center" />
     </LinearLayout>
 
